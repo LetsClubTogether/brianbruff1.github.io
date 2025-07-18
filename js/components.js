@@ -430,22 +430,23 @@ function renderFooter() {
     return `
         <footer class="footer">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                    <!-- Company -->
-                    <div>
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-8 h-8 rounded flex items-center justify-center" style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));">
-                                <span class="text-white font-bold">L</span>
-                            </div>
-                            <span class="text-xl font-bold text-white">LetsClubTogether</span>
+                <!-- Company Info -->
+                <div class="text-center mb-8">
+                    <div class="flex items-center justify-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded flex items-center justify-center" style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));">
+                            <span class="text-white font-bold">L</span>
                         </div>
-                        <p class="text-sm">
-                            Community group purchasing made simple. Raising funds through everyday purchases.
-                        </p>
+                        <span class="text-xl font-bold text-white">LetsClubTogether</span>
                     </div>
-                    
+                    <p class="text-sm max-w-md mx-auto">
+                        Community group purchasing made simple. Raising funds through everyday purchases.
+                    </p>
+                </div>
+                
+                <!-- Three Column Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <!-- Product -->
-                    <div>
+                    <div class="text-center">
                         <h3 class="text-white font-semibold mb-4">Product</h3>
                         <ul class="space-y-2 text-sm">
                             <li><a href="how-it-works.html" class="hover:text-white transition-colors">How It Works</a></li>
@@ -456,7 +457,7 @@ function renderFooter() {
                     </div>
                     
                     <!-- Company Links -->
-                    <div>
+                    <div class="text-center">
                         <h3 class="text-white font-semibold mb-4">Company</h3>
                         <ul class="space-y-2 text-sm">
                             <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
@@ -467,7 +468,7 @@ function renderFooter() {
                     </div>
                     
                     <!-- Legal -->
-                    <div>
+                    <div class="text-center">
                         <h3 class="text-white font-semibold mb-4">Legal</h3>
                         <ul class="space-y-2 text-sm">
                             <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
@@ -481,7 +482,7 @@ function renderFooter() {
                 <div class="border-t border-gray-800 pt-8">
                     <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p class="text-sm">
-                            © 2024 LetsClubTogether. All rights reserved.
+                            © 2025 LetsClubTogether. All rights reserved.
                         </p>
                         <div class="flex gap-6">
                             <a href="#" class="hover:text-white transition-colors">
