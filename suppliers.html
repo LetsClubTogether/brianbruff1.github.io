@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Suppliers - LetsClubTogether</title>
+    <meta name="description" content="Partner with LetsClubTogether to reach thousands of loyal community members and grow your business.">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+    
+    <!-- Main Content -->
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">
+                    Grow Your Business with <span class="gradient-text">Community Power</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-12">
+                    Access thousands of loyal customers while supporting local communities
+                </p>
+                
+                <div class="glass-card p-8 mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Benefits for Partner Suppliers</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text">Increased Customer Loyalty</h3>
+                            <p class="text-gray-600">
+                                Members actively choose partner suppliers to support their organizations, creating strong brand loyalty.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text-accent">Community Goodwill</h3>
+                            <p class="text-gray-600">
+                                Be seen as a business that supports local sports clubs, schools, and charities.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text">Simple Integration</h3>
+                            <p class="text-gray-600">
+                                Our API integrates seamlessly with your existing systems. No complex setup required.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text-accent">Marketing Support</h3>
+                            <p class="text-gray-600">
+                                We actively promote partner suppliers to our member base through our app and communications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-8 mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Current Focus: Fuel Suppliers</h3>
+                    <p class="text-gray-600 mb-4">
+                        We're initially partnering with fuel suppliers across Ireland. With the average member spending €2,000+ 
+                        annually on fuel, this represents a significant opportunity for increased customer acquisition and retention.
+                    </p>
+                    <p class="text-gray-600">
+                        Join major fuel brands already benefiting from community-driven customer loyalty.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <a href="contact.html" class="glass-button glass-button-primary text-lg px-8 py-4">
+                        Become a Partner Supplier
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('header').innerHTML = renderHeader();
+            document.getElementById('footer').innerHTML = renderFooter();
+            
+            // Initialize mobile menu
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('open');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

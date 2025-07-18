@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Organizations - LetsClubTogether</title>
+    <meta name="description" content="Join LetsClubTogether to transform your organization's fundraising through community group purchasing.">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+    
+    <!-- Main Content -->
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">
+                    Fundraising Made <span class="gradient-text">Simple</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-12">
+                    Transform your organization's fundraising with sustainable, passive income from member purchases
+                </p>
+                
+                <div class="glass-card p-8 mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Why Organizations Love LetsClubTogether</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text">Sustainable Income</h3>
+                            <p class="text-gray-600">
+                                No more constant fundraising events. Generate consistent revenue from your members' everyday purchases.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text-accent">Zero Effort Required</h3>
+                            <p class="text-gray-600">
+                                Once set up, everything runs automatically. No volunteers needed, no events to organize.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text">Real-Time Tracking</h3>
+                            <p class="text-gray-600">
+                                Monitor your fundraising progress with our comprehensive dashboard. See every transaction, every rebate.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 gradient-text-accent">Member Benefits</h3>
+                            <p class="text-gray-600">
+                                Your members save money while supporting the organization. Everyone wins.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="register-organization.html" class="glass-button glass-button-primary text-lg px-8 py-4">
+                        Register Your Organization Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('header').innerHTML = renderHeader();
+            document.getElementById('footer').innerHTML = renderFooter();
+            
+            // Initialize mobile menu
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('open');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

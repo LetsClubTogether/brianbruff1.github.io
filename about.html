@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LetsClubTogether</title>
+    <meta name="description" content="Learn about LetsClubTogether's mission to revolutionize community fundraising through group purchasing.">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter',sans-serif]">
+    <!-- Header -->
+    <div id="header"></div>
+    
+    <!-- Main Content -->
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl font-bold mb-6 text-center">
+                    About <span class="gradient-text">LetsClubTogether</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 text-center mb-12">
+                    Transforming community fundraising through the power of collective purchasing
+                </p>
+                
+                <div class="glass-card p-8 mb-8">
+                    <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+                    <p class="text-gray-600 mb-4">
+                        LetsClubTogether was founded with a simple yet powerful mission: to make community fundraising 
+                        sustainable, effortless, and beneficial for everyone involved. We believe that supporting your 
+                        local sports club, school, or charity shouldn't require constant raffles, bag packing, or 
+                        door-to-door collections.
+                    </p>
+                    <p class="text-gray-600">
+                        By leveraging the collective purchasing power of community members, we create a win-win-win 
+                        situation where organizations raise funds, members save money, and local businesses gain 
+                        loyal customers.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="glass-card p-6">
+                        <h3 class="text-2xl font-bold mb-3">Our Story</h3>
+                        <p class="text-gray-600">
+                            Founded in 2024, LetsClubTogether emerged from firsthand experience with the challenges 
+                            of traditional fundraising. Our founders, having spent years organizing fundraisers for 
+                            local GAA clubs, recognized the need for a modern, sustainable solution.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card p-6">
+                        <h3 class="text-2xl font-bold mb-3">Our Values</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <span><strong>Community First:</strong> Every decision prioritizes community benefit</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <span><strong>Transparency:</strong> Clear, honest communication always</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <span><strong>Innovation:</strong> Constantly improving our platform</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-8 mb-8">
+                    <h2 class="text-3xl font-bold mb-6">The Team</h2>
+                    <p class="text-gray-600 mb-6">
+                        Our team combines expertise in technology, finance, and community development to build 
+                        the best group purchasing platform in Ireland.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-32 h-32 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center">
+                                <span class="text-4xl text-white font-bold">JO</span>
+                            </div>
+                            <h4 class="font-bold">John O'Brien</h4>
+                            <p class="text-gray-600 text-sm">CEO & Co-founder</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-32 h-32 mx-auto mb-4 gradient-bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-4xl text-white font-bold">SM</span>
+                            </div>
+                            <h4 class="font-bold">Sarah Murphy</h4>
+                            <p class="text-gray-600 text-sm">CTO & Co-founder</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-32 h-32 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center">
+                                <span class="text-4xl text-white font-bold">MK</span>
+                            </div>
+                            <h4 class="font-bold">Michael Kelly</h4>
+                            <p class="text-gray-600 text-sm">Head of Partnerships</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-6">Ready to Join Us?</h2>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="register-organization.html" class="glass-button glass-button-primary text-lg px-8 py-4">
+                            Register Your Organization
+                        </a>
+                        <a href="contact.html" class="glass-button text-lg px-8 py-4">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('header').innerHTML = renderHeader();
+            document.getElementById('footer').innerHTML = renderFooter();
+            
+            // Initialize mobile menu
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('open');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
