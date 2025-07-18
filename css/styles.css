@@ -100,12 +100,15 @@ a:hover {
     border-radius: var(--radius-lg);
     padding: 2rem;
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
 
 .glass-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-xl);
     border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 /* Buttons */

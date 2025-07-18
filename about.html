@@ -128,6 +128,7 @@
     
     <!-- JavaScript -->
     <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('header').innerHTML = renderHeader();
@@ -146,6 +147,11 @@
                     closeIcon.classList.toggle('hidden');
                 });
             }
+            
+            // Initialize spotlight effect after components are loaded
+            setTimeout(() => {
+                initializeSpotlightEffect();
+            }, 100);
         });
     </script>
 </body>
