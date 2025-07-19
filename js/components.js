@@ -85,7 +85,7 @@ function renderHero() {
             <div class="container mx-auto px-4 py-20">
                 <div class="max-w-5xl mx-auto text-center">
                     <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-up">
-                        Community <span class="text-gradient">Group Purchasing</span> Made Simple
+                        Ready to Transform Your <span class="text-gradient">Fundraising</span>?                        
                     </h1>
                     
                     <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.1s">
@@ -400,7 +400,7 @@ function renderCTASection() {
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto glass-card p-12 text-center">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                        Ready to Transform Your <span class="text-gradient">Fundraising</span>?
+                        Community <span class="text-gradient">Group Purchasing</span> Made Simple
                     </h2>
                     <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                         Join the growing community of organizations raising funds through everyday purchases. 
