@@ -177,7 +177,7 @@ function renderValueProps() {
                         <ul class="text-left space-y-2">
                             <li class="flex items-start gap-2">
                                 <span class="text-green-500 mt-1">✓</span>
-                                <span class="text-gray-700">Exclusive member discounts</span>
+                                <span class="text-gray-700">Seamless tracking</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-green-500 mt-1">✓</span>
